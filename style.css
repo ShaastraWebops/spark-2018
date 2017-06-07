@@ -1,0 +1,368 @@
+
+.navbar{
+      height:50px ;
+
+      padding-left:20px;
+      text-align:justify;
+      background: rgba(0, 0, 0, 0);
+      font-family: 'Orbitron', sans-serif;
+      }
+.navbar::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-position: 0px 100px;
+        display: block;
+        background-image: url('img/Spark2.jpg');
+        width: 100%;
+        height: 80px;
+
+   -webkit-filter: blur(2px);
+   -moz-filter: blur(2px);
+   -o-filter: blur(2px);
+   -ms-filter: blur(2px);
+   filter: blur(2px);
+   transition: all ease-in-out 300ms;
+      }
+.top:hover  .navbar:before{
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: blur(0);
+    background-position: 0px -150px;
+
+  }
+.top:hover .navbar li::before{
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: blur(0);
+    background-position: 0px -150px;
+
+  }
+ li:hover {
+    border-radius: 3px;
+ }
+
+  .navbar li::before{
+      content: "";
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-position: 0px 100px;
+
+      display: block;
+      width: 100%;
+      height: 80px;
+      background-image: url('img/Spark2.jpg');
+   -webkit-filter: blur(2px);
+   -moz-filter: blur(2px);
+   -o-filter: blur(2px);
+   -ms-filter: blur(2px);
+   filter: blur(2px);
+   transition: all ease-in-out 300ms;
+      }
+
+        .navbar h1{
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+
+      }
+      .navbar h2{
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 0;
+      }
+
+/***************************************************Style for Nav bar ends*****************************/
+.bg-1{
+      margin: 0;
+      padding-top: 100px;
+      z-index: -5;
+      color: rgb(100,100,100);
+      }
+.bg-1 img{
+  background-color: rgba(255,255,255,0);
+
+}
+ h4{
+  font-size: 40px;
+  font-family: 'Roboto Mono', monospace;
+
+}
+p{
+ font-size: 30px;
+ font-family: 'Roboto Mono', monospace;
+
+}
+.img-container{
+  display: inline;
+
+}
+.shaaslogo{
+  display: inline-block;
+  transition: all 500ms ease-in;
+  filter: drop-shadow(6px 20px 5px rgba(40,40,40,0.8));
+  padding: 10px 20px;
+}
+.shaaslogo:hover{
+    transition: all 500ms both ease-in ;
+    filter: drop-shadow(6px 20px 10px rgba(40,40,40,0.8));
+    transform: translateY(-10px) scale(1.1);
+    cursor:default;
+ }
+
+ h2{
+   font-size: 40px;
+   font-family: 'Orbitron', sans-serif;
+
+ }
+.bg-2{
+  background-image: url('img/Spark1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  filter: grayscale(1) blur(3px);
+}
+.vid{
+  opacity: 0.7;
+  display:inline-block;
+}
+.vid:hover{
+  opacity:1;
+}
+.animateWho{
+  animation: animateI 1s both ease-in-out;
+}
+.GlowIT{
+
+    text-shadow:  6px 6px rgba(48, 244, 41,0.5);
+}
+.GlowIT1{
+
+  animation:  glowITanime 1s both ease-in-out;
+}
+@keyframes glowITanime{
+  0%{}
+  50%{ color: rgb(48, 244, 41) ; text-shadow:  6px 6px rgba(48, 244, 41,0.5); transform: scale(1.09);
+}
+60%{ color: rgb(48, 244, 41) ; text-shadow:  1px 1px rgba(48, 244, 41,0.5)
+}
+100%{}}
+@keyframes animateI{
+  0%{filter: grayscale(1) blur(3px);  }
+  100%{filter: grayscale(0) blur(0px);  }
+}
+.bg-1{
+
+     padding-bottom: 110px;
+}
+.bg-4{
+      padding-top: 200px;
+      padding-bottom: 200px;
+}
+.bg-3{  background-attachment: fixed;}
+ #Forwhom{
+   padding-top: 100px;
+   padding-bottom: 100px;
+   color: white;
+ }
+ .bg-4 h4{
+  background: rgba(255,0,40,0.7);
+ }
+ ul{
+ text-align: left;
+font-size: 20px;
+font-family: 'Orbitron', sans-serif;}
+ #colu1{
+        /*margin-left: 150px;*/
+        opacity: 0;
+
+        transform: rotateY(90deg)  translateX(80px);
+        background: rgb(255, 219, 77);
+        height: 340px;
+
+ }
+  #colu2{
+
+          opacity: 0;
+          background: rgb(255, 219, 77);
+        transform: rotateY(-90deg)  translateX(-800px);
+        height: 340px;
+
+ }
+ #colu3{
+   background: rgb(255, 209, 26);
+   height: 340px;
+
+   opacity: 0;}
+ .animateWhen1{
+  animation : animate2 1s linear both ;
+
+ }
+ .animateWhen2{
+  animation : animate3 1s linear both ;
+ }
+ .animateWhen3{
+     animation : animate4 1s linear both ;
+ }
+ #heading2{
+   border-radius: 10px;
+   box-shadow: 2px 2px 2px 2px rgba(100,100,100,0.8);
+   position: relative;
+   display: inline-block;
+   padding: 20px;
+   font-size: 50px;
+ }
+ @keyframes animate2{
+  0%{transform: rotateY(90deg)  translateX(800px); opacity: 0}
+  70%{transform: rotateY(-20deg) translateZ(0) translateX(0);box-shadow: 0px 0px 0px 0px rgba(20,20,20,0.5);}
+  80%{transform: rotateY(10deg) translateZ(0) translateX(0);}
+  90%{transform: rotateY(-5deg) translateZ(0) translateX(0);}
+  100%{transform: rotateY(0) ;box-shadow: -10px 20px 10px -2px rgba(20,20,20,0.5); opacity: 1;
+  }
+ }
+  @keyframes animate3{
+  0%{transform: rotateY(-90deg) translateX(-800px); opacity: 0;}
+  70%{transform: rotateY(20deg) translateZ(0) translateX(0);box-shadow: 0px 0px 0px 0px rgba(20,20,20,0.5);}
+  80%{transform: rotateY(-10deg) translateZ(0) translateX(0);}
+  90%{transform: rotateY(5deg) translateZ(0) translateX(0);}
+  100%{transform: rotateY(0) ;box-shadow: -10px 20px 10px -2px rgba(20,20,20,0.5); opacity: 1;
+  }
+ }
+ @keyframes animate4{
+   0%{transform:  translateZ(-1000px); opacity: 0;}
+   70%{transform:  translateX(0);box-shadow: 0px 0px 0px 0px rgba(20,20,20,0.5);}
+   80%{transform:   translateX(0);}
+   90%{transform:  translateZ(0) translateX(0);}
+   100%{transform:  ;box-shadow: -10px 20px 10px -2px rgba(20,20,20,0.5); opacity: 1;
+   }
+ }
+.perspective1{
+  perspective: 500px;
+
+}
+.bg-3{
+  background-image: url('img/tech1.jpg');
+  color: white;
+}
+#Calendar img{
+  width: 240px;
+  left: 10px;
+  top: 5px;
+  height: 240px;
+  position: absolute;
+
+  filter: invert(1);
+}
+#Calendar{
+  display: inline-block;
+  background-color: rgba(0, 64, 255,0.6);
+  border-radius: 50%;
+    width: 260px;
+  height: 260px;
+  padding:95px 50px;
+
+  text-align: center;
+
+}
+#Calendar h2{
+  font-size: 55px;
+}
+#Kerala{
+  display: inline-block;
+  background-color: rgba(255, 0, 255,0.6);
+  border-radius: 50%;
+    width: 250px;
+  height: 250px;
+  padding:75px 30px;
+
+  text-align: center;
+
+}
+#Kerala h2{
+  font-size: 55px;
+}
+#TamilNadu{
+  display: inline-block;
+  background-color: rgba(51, 255, 51,0.6);
+  border-radius: 50%;
+    width: 250px;
+  height: 250px;
+  padding:45px 50px;
+
+  text-align: center;
+
+}
+#TamilNadu h2{
+  font-size: 55px;
+}
+
+#Karnataka{
+  display: inline-block;
+  background-color: rgba(255, 51, 51,0.6);
+  border-radius: 50%;
+    width: 280px;
+  height: 280px;
+  padding:95px 20px;
+
+  text-align: center;
+
+}
+#Karnataka h2{
+  font-size: 40px;
+}
+#Telangana{
+  display: inline-block;
+  background-color: rgba(255, 51, 0,0.6);
+  border-radius: 50%;
+    width: 250px;
+  height: 250px;
+  padding:90px 30px;
+
+  text-align: center;
+
+}
+#Telangana h2{
+  font-size: 35px;
+}
+
+#Andhra{
+  display: inline-block;
+  background-color: rgba(0, 255, 170,0.6);
+  border-radius: 50%;
+    width: 250px;
+  height: 250px;
+  padding:75px 50px;
+
+  text-align: center;
+
+}
+#Andhra h2{
+  font-size: 35px;
+}
+.bigon1{
+  animation: bingo 500ms both ease-in-out ;
+}
+.bigon4{
+  animation: bingo 300ms 100ms  both ease-in-out ;
+}
+.bigon5{
+  animation: bingo 700ms  both ease-in-out ;
+}
+.bigon2{
+  animation: bingo 500ms both ease-in-out ;
+}
+@keyframes bingo{
+  0%{transform: scale(0.5); opacity: 0}
+  80%{transform: scale(1.1);}
+  100%{transform: scale(1); opacity: 1}
+}
+.transparentObj{
+  opacity: 0;
+}
