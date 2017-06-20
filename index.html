@@ -17,9 +17,9 @@
     <div class="top">
 
 
-      <nav class="navbar navbar-inverse navbar-fixed-top">
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
-          <div class="container" id="Insider">
+          <div class="container-fluid" >
             <div class="navbar-header">
               <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar" >
                 <span class="icon-bar"></span>
@@ -33,6 +33,7 @@
                     <li><a href="#Forwhom"><h2>About SPARK</h2></a></li>
                     <li><a href="#Contact"><h2>Structure</h2></a></li>
                     <li><a href="#when"><h2>When & Where</h2></a></li>
+                    <li><a href="#ContactUS"><h2>Contact Us</h2></a></li>
               </ul>
             </div>
         </div>
@@ -46,7 +47,7 @@
     <div >
 
 
-    <h2 class="margin"> <br />About Shaastra</h2>
+    <h2 class="INTRO" > <br />About Shaastra</h2>
       <div class="img-container" >
         <a href="http://www.shaastra.org/">
     <img src="img/logo-r.png" class="img-responsive shaaslogo " style="display:inline" alt="My Photo" width="250" height="350"
@@ -58,7 +59,7 @@
   </div>
   </div>
   <div class="container-fluid bg-2 text-center">
-  <div id="Forwhom"><div class="GlowIT"> <h2>
+  <div id="Forwhom"><div class="GlowIT"> <h2 id="heading2">
   <strong>What is SPARK</strong></h2>
   </div>
   <h4>Previously conducted in the form of Shaastra Junior Quiz, Spark is Shaastra's flagship event for school students. It aims to give a technical flavour to school students. Spark is conducted every year across the country.
@@ -138,37 +139,38 @@ Spark has been conducted in the cities of Chennai, Mumbai, Pune, Delhi, Kolkata,
 </div>
 
 <div class="container-fluid bg-3 text-center">
-  <div id="when">
-    <h2>When</h2>
-    <br />
-    <div id="Calendar" class="bigo1">
-          <h2>July</h2>
-      <img src="img/Calendar.png" />
+  <div id="when" class="col-lg-6">
 
-    </div>
+    <h2 id="heading2">When</h2>
+
+    <div id="Calendar" class="Calclass">
+          <h2 class="textcal">July</h2>
+      <img src="img/Calendar.png" />
+      </div>
   </div>
-  <div class="container SouthInd">
-      <br />
-    <h2>Where</h2>
+  <div class="container SouthInd col-lg-6">
+
+    <h2 id="heading2">Where</h2>
 
     <div>
       <ul class="StateList">
+        <li class="stateName " id="TagTelegn">
+          Telegana
+        </li>
+        <li class="stateName " id="TagKarn">
+          Karnataka
+        </li>
         <li class="stateName " id="TagAndhra" >
           Andhra Pradesh
         </li>
 
-        <li class="stateName " id="TagKarn">
-          Karnataka
-        </li>
-        <li class="stateName " id="TagTelegn">
-          Telegana
+        <li class="stateName " id="TagKerala">
+          Kerala
         </li>
         <li class="stateName " id="TagTamil">
           Tamil Nadu
         </li>
-        <li class="stateName " id="TagKerala">
-          Kerala
-        </li>
+
       </ul>
     </div>
     <div class="states" id="telegana">
@@ -192,13 +194,106 @@ Spark has been conducted in the cities of Chennai, Mumbai, Pune, Delhi, Kolkata,
   </div> -->
 </div>
 </div>
+<div class="container-fluid bg-5 text-center" id="ContactUS">
+<div >
+  <div class="container-fluid">
+      <h2 id="heading2"><strong>Contact Us</strong> </h2>
+    <ul class="StateList2 text-center">
+      <div class="wrapper" id="TagAndhra2" >
+        <div class="card" >
 
+          <div class="front face">
+
+      <li class="stateName2">
+        Andhra Pradesh
+      </li>
+    </div>
+    <div class="back face">
+    <p>
+      Person of Contact:<br />
+      Email-ID:
+    </p>
+    </div>
+  </div>
+</div>
+<div class="wrapper" id="TagKarn2" >
+  <div class="card" >
+
+    <div class="front face">
+      <li class="stateName2 " >
+        Karnataka
+      </li>
+    </div>
+    <div class="back face">
+      <p>
+        Person of Contact:<br />
+        Email-ID:
+      </p>
+    </div>
+  </div>
+</div>
+
+      <div class="wrapper" id="TagTelegn2" >
+        <div class="card" >
+
+          <div class="front face">
+      <li class="stateName2 " >
+        Telegana
+      </li>
+    </div>
+    <div class="back face">
+      <p>
+        Person of Contact:<br />
+        Email-ID:
+      </p>
+    </div>
+  </div>
+</div>
+
+      <div class="wrapper" id="TagTamil2" >
+        <div class="card" >
+
+          <div class="front face">
+      <li class="stateName2 " >
+        Tamil Nadu
+      </li>
+    </div>
+    <div class="back face">
+      <p>
+        Person of Contact:<br />
+        Email-ID:
+      </p>
+    </div>
+  </div>
+</div>
+
+      <div class="wrapper" id="TagKerala2" >
+        <div class="card" >
+
+          <div class="front face">
+      <li class="stateName2 " >
+        Kerala
+      </li>
+    </div>
+    <div class="back face">
+      <p>
+        Person of Contact:<br />
+        Email-ID:
+      </p>
+    </div>
+  </div>
+</div>
+    </ul>
+
+
+  </div>
+</div>
 <script src="Sources/jquery.waypoints.min.js"></script>
 <script>
 
 var $who = $(".bg-2");
 var $where = $("#when");
-
+var $Calendar = $('.Calclass');
 var $when = $(".bg-4");
 var $win = $(window);
 var $colu1 = $('#colu1');
@@ -215,7 +310,43 @@ var $tagTamil = $('#TagTamil');
 var $tagTelegn = $('#TagTelegn');
 var $tagKerala = $('#TagKerala');
 var $tagKarn = $('#TagKarn');
+var $tagAndh2 = $('#TagAndhra2');
+var $tagTamil2 = $('#TagTamil2');
+var $tagTelegn2 = $('#TagTelegn2');
+var $tagKerala2 = $('#TagKerala2');
+var $tagKarn2 = $('#TagKarn2');
+var $ContactUS = $('#ContactUS');
 
+$bigo3.mouseenter(function(){
+  $bigo3.addClass("emboss");
+});
+$bigo3.mouseleave(function(){
+  $bigo3.removeClass("emboss");
+});
+$bigo4.mouseenter(function(){
+  $bigo4.addClass("emboss");
+});
+$bigo4.mouseleave(function(){
+  $bigo4.removeClass("emboss");
+});
+$bigo1.mouseenter(function(){
+  $bigo1.addClass("emboss");
+});
+$bigo1.mouseleave(function(){
+  $bigo1.removeClass("emboss");
+});
+$bigo5.mouseenter(function(){
+  $bigo5.addClass("emboss");
+});
+$bigo5.mouseleave(function(){
+  $bigo5.removeClass("emboss");
+});
+$bigo2.mouseenter(function(){
+  $bigo2.addClass("emboss");
+});
+$bigo2.mouseleave(function(){
+  $bigo2.removeClass("emboss");
+});
 $tagAndh.mouseenter(function(){
   $bigo3.addClass("emboss");
 });
@@ -271,17 +402,31 @@ $tagKarn.mouseleave(function(){
 
 $where.waypoint(function(direction){
   if(direction == 'down'){
-
+    $Calendar.addClass("bigon1");
     $bigo1.addClass("bigon1");
-      $bigo2.addClass("bigon2");
-        $bigo4.addClass("bigon4");
-     $bigo5.addClass("bigon5");
-     $bigo3.addClass("bigon3");
-
+    $tagTelegn.addClass("bigon1");
+    $bigo2.addClass("bigon2");
+    $tagKarn.addClass("bigon2");
+    $bigo4.addClass("bigon4");
+    $tagTamil.addClass("bigon4");
+    $bigo5.addClass("bigon5");
+    $tagKerala.addClass("bigon5");
+    $bigo3.addClass("bigon3");
+    $tagAndh.addClass("bigon3");
     console.log("hi")
   }
 
-}, {offset : "-10%"});
+}, {offset : "10%"});
+
+$ContactUS.waypoint(function(direction){
+  if(direction == 'down'){
+    $tagTelegn2.addClass("lastone");
+    $tagKarn2.addClass("lastone");
+    $tagTamil2.addClass("lastone");
+    $tagKerala2.addClass("lastone");
+    $tagAndh2.addClass("lastone");
+  }
+}, {offset : "40%"});
 
 
  </script>
