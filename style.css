@@ -5,7 +5,7 @@
       padding-left:20px;
       text-align:justify;
       background: rgba(0, 0, 0, 0);
-      font-family: 'Comic Sans MS', sans-serif;
+    font-family: 'Trirong', serif;
       }
 .navbar::before{
         content: "";
@@ -15,7 +15,7 @@
         z-index: -1;
         background-position: 0px 100px;
         display: block;
-        background-color: #303F9F;
+        background-image: url('img/Spark2.jpg');
         width: 100%;
         height: 80px;
 
@@ -59,7 +59,7 @@
       display: block;
       width: 100%;
       height: 80px;
-        background-color: #303F9F;
+        background-image: url('img/Spark2.jpg');
    -webkit-filter: blur(2px);
    -moz-filter: blur(2px);
    -o-filter: blur(2px);
@@ -75,7 +75,7 @@
 
       }
       .navbar h2{
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 10px;
         padding: 0;
       }
@@ -92,14 +92,18 @@
 
 }
  h4{
-  font-size: 40px;
-  font-family: 'Comic Sans MS', monospace;
-
+  font-size: 30px;
+  font-family: 'Trirong', serif;
+  line-height: 45px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 p{
  font-size: 30px;
- font-family: 'Comic Sans MS', monospace;
-
+font-family: 'Trirong', serif;
+ line-height: 45px;
+ padding-left: 50px;
+ padding-right: 50px;
 }
 .img-container{
   display: inline;
@@ -107,41 +111,54 @@ p{
 }
 .shaaslogo{
   display: inline-block;
-  transition: all 500ms ease-in;
-  filter: drop-shadow(6px 20px 5px rgba(40,40,40,0.8));
+  transition: all 250ms ease-in;
+  filter: drop-shadow(6px 10px 5px rgba(40,40,40,0.6));
   padding: 10px 20px;
 }
 .shaaslogo:hover{
-    transition: all 500ms both ease-in ;
-    filter: drop-shadow(6px 20px 10px rgba(40,40,40,0.8));
+    filter: drop-shadow(6px 10px 10px rgba(40,40,40,0.6));
     transform: translateY(-10px) scale(1.1);
-    cursor:default;
+    cursor:grab;
  }
 
  h2{
    font-size: 40px;
-   font-family: 'Comic Sans MS', sans-serif;
+  font-family: 'Trirong', serif;
 
  }
 .bg-2{
-  background-color: #263238;
+  background-image: url("img/turq2.jpg");
   background-attachment: fixed;
   background-size: cover;
   filter: grayscale(1) blur(3px);
+  /* Background Gradient for Analagous Colors */
+
+
+    background-color: #E2224C;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #E2224C -webkit-gradient(linear, left top, left bottom, from(#E27822), to(#E2224C)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #E2224C -moz-linear-gradient(top, #E27822, #E2224C) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E27822, endColorstr=#E2224C) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E27822, endColorstr=#E27822)" no-repeat;
+
+
 }
-.vid{
+/*.vid{
   opacity: 0.7;
   display:inline-block;
 }
 .vid:hover{
   opacity:1;
-}
+}*/
 .animateWho{
   animation: animateI 1s both ease-in-out;
 }
 .GlowIT{
 
-    text-shadow:  6px 6px rgba(48, 244, 41,0.5);
+    text-shadow:  6px 6px grey;
 }
 .GlowIT1{
 
@@ -149,9 +166,9 @@ p{
 }
 @keyframes glowITanime{
   0%{}
-  50%{ color: rgb(48, 244, 41) ; text-shadow:  6px 6px rgba(48, 244, 41,0.5); transform: scale(1.09);
+  50%{ color: rgb(48, 244, 41) ; text-shadow:  6px 6px grey; transform: scale(1.09);
 }
-60%{ color: rgb(48, 244, 41) ; text-shadow:  1px 1px rgba(48, 244, 41,0.5)
+60%{ color: rgb(48, 244, 41) ; text-shadow:  1px 1px grey;
 }
 100%{}}
 @keyframes animateI{
@@ -178,14 +195,16 @@ p{
  ul{
  text-align: left;
 font-size: 20px;
-font-family: 'Comic Sans MS', sans-serif;}
+font-family: 'Trirong', serif;
+padding-left: 20px;
+padding-right: 20px;}
  #colu1{
         /*margin-left: 150px;*/
         opacity: 0;
 
         transform: rotateY(90deg)  translateX(80px);
         background: rgb(255, 219, 77);
-        height: 340px;
+        height: 350px;
 
  }
   #colu2{
@@ -193,12 +212,12 @@ font-family: 'Comic Sans MS', sans-serif;}
           opacity: 0;
           background: rgb(255, 219, 77);
         transform: rotateY(-90deg)  translateX(-800px);
-        height: 340px;
+        height: 350px;
 
  }
  #colu3{
    background: rgb(255, 209, 26);
-   height: 340px;
+   height: 350px;
 
    opacity: 0;}
  .animateWhen1{
@@ -250,6 +269,18 @@ font-family: 'Comic Sans MS', sans-serif;}
 .bg-3{
   background-color: #263238;
   color: white;
+
+      background-color: #E2224C;
+      /* For WebKit (Safari, Chrome, etc) */
+      background: #E2224C -webkit-gradient(linear, left top, left bottom, from(#E27822), to(#E2224C)) no-repeat;
+      /* Mozilla,Firefox/Gecko */
+      background: #E2224C -moz-linear-gradient(top, #E27822, #E2224C) no-repeat;
+      /* IE 5.5 - 7 */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E27822, endColorstr=#E2224C) no-repeat;
+      /* IE 8 */
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E27822, endColorstr=#E27822)" no-repeat;
+
+
 }
 
 #Calendar img{
@@ -271,96 +302,98 @@ font-family: 'Comic Sans MS', sans-serif;}
 
 }
 #Calendar h2{
-  font-size: 55px;
+  font-size: 80px;
+  color: white;
+  position: absolute;
 }
-#Kerala{
-  display: inline-block;
-  background-color: rgba(255, 0, 255,0.6);
-  border-radius: 50%;
-    width: 250px;
-  height: 250px;
-  padding:75px 30px;
-
-  text-align: center;
+#Calendar img{
+  position: relative;
+  left: -35px;
+  top: -90px;
 
 }
-#Kerala h2{
-  font-size: 55px;
-}
-#TamilNadu{
-  display: inline-block;
-  background-color: rgba(51, 255, 51,0.6);
-  border-radius: 50%;
-    width: 250px;
-  height: 250px;
-  padding:45px 50px;
+.SouthInd{
 
-  text-align: center;
-
-}
-#TamilNadu h2{
-  font-size: 55px;
+  perspective: 400px;
 }
 
-#Karnataka{
-  display: inline-block;
-  background-color: rgba(255, 51, 51,0.6);
-  border-radius: 50%;
-    width: 280px;
-  height: 280px;
-  padding:95px 20px;
-
-  text-align: center;
-
+.states{
+  opacity: 0;
+  position: relative;
 }
-#Karnataka h2{
+.StateList{
   font-size: 40px;
-}
-#Telangana{
-  display: inline-block;
-  background-color: rgba(255, 51, 0,0.6);
-  border-radius: 50%;
-    width: 250px;
-  height: 250px;
-  padding:90px 30px;
 
   text-align: center;
-
 }
-#Telangana h2{
-  font-size: 35px;
-}
-
-#Andhra{
+.stateName{
   display: inline-block;
-  background-color: rgba(0, 255, 170,0.6);
-  border-radius: 50%;
-    width: 250px;
-  height: 250px;
-  padding:75px 50px;
-
-  text-align: center;
-
+  position: relative;
+  border: 1px solid;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 10px;
+  top: 100px;
 }
-#Andhra h2{
-  font-size: 35px;
+#andhra{
+  top: 105px;
+  left: 45px;
+}
+#telegana{
+top: 241px;
+left: -2px;
+}
+#karnataka{
+  left: -124px;
+  top: -129px;
+}
+#tamilnadu{
+  top: -205px;
+  left: -48px;
+}
+
+#kerala{
+  top: -390px;
+  left: -130px;
+}
+
+#outline{top: -818px;
+  transform: scale(0.88);
+  z-index: -1;
+}
+.emboss {
+
+  filter: drop-shadow(0 10px 20px black);
+  animation:  embossed 1s both ease-in-out;
+}
+@keyframes embossed{
+  0%{transform: translateX(0);}
+  50%{transform: translateX(21px);
+  width: 200px;
+  }
+  100%{transform: translateX(0);}
 }
 .bigon1{
-  animation: bingo 500ms both ease-in-out ;
-}
-.bigon4{
-  animation: bingo 300ms 100ms  both ease-in-out ;
-}
-.bigon5{
-  animation: bingo 700ms  both ease-in-out ;
+  animation: bingo 100ms both ease-in-out ;
 }
 .bigon2{
-  animation: bingo 500ms both ease-in-out ;
+  animation: bingo 100ms 200ms both ease-in-out ;
+}
+
+.bigon4{
+  animation: bingo 100ms 300ms  both ease-in-out ;
+}
+.bigon5{
+  animation: bingo 100ms 400ms  both ease-in-out ;
+}
+.bigon3{
+  animation: bingo 100ms 100ms both ease-in-out ;
 }
 @keyframes bingo{
-  0%{transform: scale(0.5); opacity: 0}
-  80%{transform: scale(1.1);}
-  100%{transform: scale(1); opacity: 1}
+  0%{transform: translateZ(200px); opacity: 0}
+  80%{transform: translateZ(0);}
+  100%{transform: translateZ(0); opacity: 1}
 }
 .transparentObj{
   opacity: 0;

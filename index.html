@@ -2,16 +2,17 @@
 <html>
   <head>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barrio|Orbitron|Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+      <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link href="https://fonts.googleapis.com/css?family=Barrio|Exo|Orbitron" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
   <title>Spark || Shaastra 2018</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
     <!--NAV BAR -->
     <div class="top">
 
@@ -25,13 +26,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><h1>Spark</h1></a>
+                <a class="navbar-brand active" href="#Intro"><h1>Spark</h1></a>
           </div>
             <div class="collapse navbar-collapse " id="myNavbar" >
               <ul class="nav navbar-nav ">
-
-                    <li><a href="#"><h2>About Shaastra</h2></a></li>
-
                     <li><a href="#Forwhom"><h2>About SPARK</h2></a></li>
                     <li><a href="#Contact"><h2>Structure</h2></a></li>
                     <li><a href="#when"><h2>When & Where</h2></a></li>
@@ -44,7 +42,7 @@
 
 
 
-  <div class="container-fluid bg-1 text-center">
+  <div class="container-fluid bg-1 text-center" id="Intro">
     <div >
 
 
@@ -52,13 +50,13 @@
       <div class="img-container" >
         <a href="http://www.shaastra.org/">
     <img src="img/logo-r.png" class="img-responsive shaaslogo " style="display:inline" alt="My Photo" width="250" height="350"
-    > </a> <p>Shaastra is the annual technical fest of the Indian Institute of Technology Madras (IITM), Chennai, India. The Sanskrit word ‘Shaastra’ means science and the festival accordingly consists of various engineering, science and technology competitions, summits, lectures, video conferences, exhibitions, demonstrations and workshops. It has so far seen eighteen editions, having started in its current avatar in the year 2000. Shaastra attracts participation from all over India, and seeks to provide collegiate students with a platform to showcase their scientific and engineering talents. Shaastra is entirely student managed and holds the distinction of being the first such event in the world to be ISO 9001:2000 certified for implementing a 
+    > </a> <p>Shaastra is the annual technical fest of the IIT Madras, Chennai, India. The fest consists of various engineering, science and technology competitions, summits, lectures, video conferences, exhibitions, demonstrations and workshops. It has so far seen eighteen editions, having started in its current avatar in the year 2000. Shaastra attracts participation from all over India, and seeks to provide collegiate students with a platform to showcase their scientific and engineering talents. Shaastra is entirely student managed and holds the distinction of being the first such event in the world to be ISO 9001:2000 certified for implementing a 
       Quality Management System.</p>
 </div>
 
 
   </div>
-    </div>
+  </div>
   <div class="container-fluid bg-2 text-center">
   <div id="Forwhom"><div class="GlowIT"> <h2>
   <strong>What is SPARK</strong></h2>
@@ -73,8 +71,8 @@ Spark has been conducted in the cities of Chennai, Mumbai, Pune, Delhi, Kolkata,
     </div>
   </div>
 
-    <div class="container-fluid bg-4 text-center">
-    <div id="Contact">
+    <div class="container-fluid bg-4 text-center" id="Contact">
+    <div >
     <h2 id="heading2"><strong>Structure</strong> </h2>
      <div class="container ">
        <div class="perspective1">
@@ -95,7 +93,9 @@ Spark has been conducted in the cities of Chennai, Mumbai, Pune, Delhi, Kolkata,
             <li>
               Top 2 teams will get prizes
             </li>
-            Top 5 teams from each city will qualify for screening
+            <li>
+              Top 5 teams from each city will qualify for screening
+            </li>
           </ul>
 
       </div>
@@ -137,26 +137,67 @@ Spark has been conducted in the cities of Chennai, Mumbai, Pune, Delhi, Kolkata,
 
 </div>
 
-<div class="container-fluid bg-2 text-center">
-  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+<div class="container-fluid bg-3 text-center">
+  <div id="when">
+    <h2>When</h2>
+    <br />
     <div id="Calendar" class="bigo1">
-      <img src="img/Calendar.png"/>
-      <h2>July</h2>
+          <h2>July</h2>
+      <img src="img/Calendar.png" />
+
     </div>
   </div>
-  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-    
+  <div class="container SouthInd">
+      <br />
+    <h2>Where</h2>
+
+    <div>
+      <ul class="StateList">
+        <li class="stateName " id="TagAndhra" >
+          Andhra Pradesh
+        </li>
+
+        <li class="stateName " id="TagKarn">
+          Karnataka
+        </li>
+        <li class="stateName " id="TagTelegn">
+          Telegana
+        </li>
+        <li class="stateName " id="TagTamil">
+          Tamil Nadu
+        </li>
+        <li class="stateName " id="TagKerala">
+          Kerala
+        </li>
+      </ul>
+    </div>
+    <div class="states" id="telegana">
+      <img src="img/telangana.png" / >
+    </div>
+    <div class="states" id="andhra">
+      <img src="img/andhra.png" />
+    </div>
+    <div class="states" id="karnataka">
+      <img src="img/karnataka.png" />
+    </div>
+    <div class="states" id="tamilnadu">
+      <img src="img/tamilnadu.png" />
+    </div>
+
+  <div class="states" id="kerala">
+    <img src='img/kerala.png' />
   </div>
+  <!-- <div class="states" id="outline">
+    <img src="img/5-states.png" />
+  </div> -->
+</div>
 </div>
 
-
-<canvas class="background1"></canvas>
 <script src="Sources/jquery.waypoints.min.js"></script>
- <script src="node_modules/particlesjs/dist/particles.min.js"></script>
 <script>
 
 var $who = $(".bg-2");
-var $where = $(".bg-3");
+var $where = $("#when");
 
 var $when = $(".bg-4");
 var $win = $(window);
@@ -164,12 +205,47 @@ var $colu1 = $('#colu1');
 var $colu2 = $('#colu2');
 var $glowit = $('.GlowIT');
 var $colu3 = $('#colu3');
-var $bigo1 = $('.bigo1');
-var $bigo5 = $('.bigo5');
-var $bigo4 = $('.bigo4');
-var $bigo2 = $('.bigo2');
+var $bigo1 = $('#telegana');
+var $bigo5 = $('#kerala');
+var $bigo4 = $('#tamilnadu');
+var $bigo2 = $('#karnataka');
+var $bigo3 = $('#andhra');
+var $tagAndh = $('#TagAndhra');
+var $tagTamil = $('#TagTamil');
+var $tagTelegn = $('#TagTelegn');
+var $tagKerala = $('#TagKerala');
+var $tagKarn = $('#TagKarn');
 
-
+$tagAndh.mouseenter(function(){
+  $bigo3.addClass("emboss");
+});
+$tagAndh.mouseleave(function(){
+  $bigo3.removeClass("emboss");
+});
+$tagTamil.mouseenter(function(){
+  $bigo4.addClass("emboss");
+});
+$tagTamil.mouseleave(function(){
+  $bigo4.removeClass("emboss");
+});
+$tagTelegn.mouseenter(function(){
+  $bigo1.addClass("emboss");
+});
+$tagTelegn.mouseleave(function(){
+  $bigo1.removeClass("emboss");
+});
+$tagKerala.mouseenter(function(){
+  $bigo5.addClass("emboss");
+});
+$tagKerala.mouseleave(function(){
+  $bigo5.removeClass("emboss");
+});
+$tagKarn.mouseenter(function(){
+  $bigo2.addClass("emboss");
+});
+$tagKarn.mouseleave(function(){
+  $bigo2.removeClass("emboss");
+});
   $who.waypoint(function(direction){
     if(direction == 'down'){
       $glowit.addClass("GlowIT1");
@@ -200,12 +276,12 @@ $where.waypoint(function(direction){
       $bigo2.addClass("bigon2");
         $bigo4.addClass("bigon4");
      $bigo5.addClass("bigon5");
-
+     $bigo3.addClass("bigon3");
 
     console.log("hi")
   }
 
-}, {offset : "40%"});
+}, {offset : "-10%"});
 
 
  </script>
